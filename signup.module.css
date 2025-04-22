@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4a7a9e;
+    padding: 20px;
+  }
+  
+  .formCard {
+    background-color: #4a7a9e;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .formGroup input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #1f4e70;
+  }
+  
+  .inputError {
+    border: 1px solid #ff6b6b !important;
+    background-color: rgba(255, 107, 107, 0.1) !important;
+  }
+  
+  .errorMessage {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .formError {
+    background-color: rgba(255, 107, 107, 0.2);
+    border: 1px solid #ff6b6b;
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .loginLink {
+    text-align: right;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loginLink a {
+    color: #a0d2eb;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  .loginLink a:hover {
+    text-decoration: underline;
+  }
+  
+  .signupButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2c507e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signupButton:hover {
+    background-color: #1f4e70;
+  }
+  
+  @media (max-width: 480px) {
+    .formCard {
+      padding: 30px 20px;
+    }
+    
+    .title {
+      font-size: 20px;
+    }
+    
+    .signupButton {
+      padding: 12px;
+    }
+  }
